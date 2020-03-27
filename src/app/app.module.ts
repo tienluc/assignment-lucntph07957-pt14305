@@ -7,9 +7,10 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-import { ProductListComponent } from './product-list/product-list.component';
+
 import { SliderComponent } from './slider/slider.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -17,9 +18,10 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
   declarations: [
     AppComponent,
     
-    ProductListComponent,
+  
     SliderComponent,
-    ProductManagerComponent
+    ProductManagerComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
