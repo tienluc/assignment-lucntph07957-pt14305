@@ -1,0 +1,30 @@
+
+<h1 class="my-4">Product Manager</h1>
+
+<br>
+<table class="table table-white">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Product Name</th>
+        <th scope="col">Photo</th>
+        <th scope="col">Price</th>
+        <th scope="col">Status</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row" ><p>{{product.id}}</p></th>
+        <td ><p>{{product.name}}</p></td>
+        <td ><p><img  style="width: 100px; height: 70px;" src="{{product.img}}" alt=""></p></td>
+        <td ><p>${{product.price}}</p></td>
+        <td ><p>{{product.status}}</p></td>
+        <td> 
+        <button  style="width: 71.63px; " class="btn btn-primary " >Edit</button>
+        <br><br>
+        <button  class="btn btn-primary" >Delete</button></td>
+      </tr>
+      
+    </tbody>
+  </table>
