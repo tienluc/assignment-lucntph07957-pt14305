@@ -9,7 +9,7 @@ import { ProductManagerComponent } from './client/product-manager/product-manage
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'client/about', pathMatch: 'full'},
+  { path: '', redirectTo: 'client', pathMatch: 'full'},
   {path: 'client', component: IndexclientComponent,
   children:[
     { path: '', redirectTo: 'about', pathMatch: 'full'},
