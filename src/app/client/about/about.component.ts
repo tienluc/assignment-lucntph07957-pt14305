@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import{ Product } from '../Product';
-import { ProductService } from '../product.service'
+import{ Product } from '../../Product';
+import { ProductService } from '../../product.service'
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',

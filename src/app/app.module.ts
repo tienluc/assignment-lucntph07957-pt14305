@@ -8,9 +8,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 
-import { SliderComponent } from './slider/slider.component';
-import { ProductManagerComponent } from './product-manager/product-manager.component';
-import { AboutComponent } from './about/about.component';
+import { SliderComponent } from './client/slider/slider.component';
+import { ProductManagerComponent } from './client/product-manager/product-manager.component';
+import { AboutComponent } from './client/about/about.component';
+import { IndexclientComponent } from './client/indexclient/indexclient.component';
 
 
 
@@ -21,7 +22,8 @@ import { AboutComponent } from './about/about.component';
   
     SliderComponent,
     ProductManagerComponent,
-    AboutComponent
+    AboutComponent,
+    IndexclientComponent
   ],
   imports: [
     BrowserModule,
