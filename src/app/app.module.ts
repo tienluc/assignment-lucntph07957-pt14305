@@ -16,6 +16,7 @@ import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
 
 import { ProductEditComponent } from './admin/product-edit/product-edit.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AddProductComponent } from './admin/add-product/add-product.component';
 
 
 @NgModule({
@@ -29,7 +30,9 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     IndexclientComponent,
     IndexAdminComponent,
   
-    ProductEditComponent
+    ProductEditComponent,
+  
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
