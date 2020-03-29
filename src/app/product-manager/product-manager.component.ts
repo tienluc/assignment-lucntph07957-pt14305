@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ProductService } from '../../product.service'
-import{ Product } from '../../Product'
+import { ProductService } from '../product.service'
+import{ Product } from '../Product'
 @Component({
   selector: 'app-product-manager',
   templateUrl: './product-manager.component.html',
   styleUrls: ['./product-manager.component.css']
 })
 export class ProductManagerComponent implements OnInit {
-
+  page = 1;
+  pageSize = 3;
   constructor(
     private productService: ProductService
   ) { }
