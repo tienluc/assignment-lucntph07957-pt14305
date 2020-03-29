@@ -7,29 +7,36 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 
-
+import { ProductListComponent } from './client/product-list/product-list.component';
 import { SliderComponent } from './slider/slider.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { AboutComponent } from './client/about/about.component';
 import { IndexclientComponent } from './client/indexclient/indexclient.component';
-
+import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
+import { AddComponent } from './admin/add-product/add.component';
+import { ProductEditComponent } from './admin/product-edit/product-edit.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     
-  
+    ProductListComponent,
     SliderComponent,
     ProductManagerComponent,
     AboutComponent,
-    IndexclientComponent
+    IndexclientComponent,
+    IndexAdminComponent,
+    AddComponent,
+    ProductEditComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
