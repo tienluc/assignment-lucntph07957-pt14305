@@ -9,7 +9,7 @@ import { AppComponent } from './app.component';
 
 
 import { SliderComponent } from './slider/slider.component';
-import { ProductManagerComponent } from './client/product-manager/product-manager.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { AboutComponent } from './client/about/about.component';
 import { IndexclientComponent } from './client/indexclient/indexclient.component';
 
