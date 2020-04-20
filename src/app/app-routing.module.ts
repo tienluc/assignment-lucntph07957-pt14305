@@ -6,25 +6,33 @@ import { ProductListComponent } from './client/product-list/product-list.compone
 import { AddProductComponent } from './admin/add-product/add-product.component';
 import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
 import { ProductEditComponent } from './admin/product-edit/product-edit.component';
+import { ProductManagerComponent } from './product-manager/product-manager.component';
+import { ProductDetailComponent } from './client/product-detail/product-detail.component';
+import { ChartComponent } from './admin/chart/chart.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'client', pathMatch: 'full'},
-
+  
   {path: 'client', component: IndexclientComponent,
   children:[
     { path: '', redirectTo: 'about', pathMatch: 'full'},
     {path: 'about', component: AboutComponent},
     {path: 'product', component: ProductListComponent},
+    {path: 'product/:productID', component: ProductDetailComponent},
   
   ]
   },
   
-  
+  { path: '', redirectTo: 'client', pathMatch: 'full'},
   {path: 'admin', component: IndexAdminComponent,
   children:[
-  {path: 'add', component: AddProductComponent},
-     {path: 'edit', component: ProductEditComponent},
+    { path: '', redirectTo: 'list', pathMatch: 'full'},
+    {path: 'add', component: AddComponent},
+    {path: 'edit', component: ProductEditComponent},
+    {path: 'list', component: ProductManagerComponent},
+    {path: 'list/edit/:productID', component: ProductEditComponent},
+    {path: 'charts', component: ChartComponent},
+
    
   ]
 },

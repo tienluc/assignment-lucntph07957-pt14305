@@ -13,11 +13,11 @@ import { ProductManagerComponent } from './product-manager/product-manager.compo
 import { AboutComponent } from './client/about/about.component';
 import { IndexclientComponent } from './client/indexclient/indexclient.component';
 import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
-import { AddProductComponent } from './admin/add-product/add-product.component';
+import { AddComponent } from './admin/add-product/add.component';
 import { ProductEditComponent } from './admin/product-edit/product-edit.component';
-
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
+import { ProductDetailComponent } from './client/product-detail/product-detail.component';
+import { ChartComponent } from './admin/chart/chart.component';
 
 
 @NgModule({
@@ -30,10 +30,10 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     AboutComponent,
     IndexclientComponent,
     IndexAdminComponent,
-  
+    AddComponent,
     ProductEditComponent,
-  
-    AddProductComponent
+    ProductDetailComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
