@@ -17,6 +17,7 @@ import { ProductEditComponent } from './admin/product-edit/product-edit.componen
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ProductDetailComponent } from './client/product-detail/product-detail.component';
 import { ChartComponent } from './admin/chart/chart.component';
+import { AddProductComponent } from './admin/add-product/add-product.component';
 
 
 @NgModule({
@@ -29,10 +30,11 @@ import { ChartComponent } from './admin/chart/chart.component';
     AboutComponent,
     IndexclientComponent,
     IndexAdminComponent,
-    AddComponent,
+   
     ProductEditComponent,
     ProductDetailComponent,
-    ChartComponent
+    ChartComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,

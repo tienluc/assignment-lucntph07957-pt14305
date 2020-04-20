@@ -1,3 +1,15 @@
-<p>
-product-detail works!
-</p>
+<h1 class="my-4">PRODUCT DETAIL</h1>
+<div class="card mb-3" style="max-width: 600px;"  *ngIf='product'>
+    <div class="row no-gutters">
+      <div class="col-md-13">
+        <img [src]="product.img" class="card-img" alt="">
+      </div>
+      <div class="col-md-9">
+        <div class="card-body">
+          <h5 class="card-title"> {{product.name}}</h5>
+          <p class="card-text">${{product.price}}</p>
+          <p class="card-text"><small class="text-muted">{{product.status}}</small></p>
+        </div>
+      </div>
+    </div>
+  </div>

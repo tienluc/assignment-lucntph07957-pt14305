@@ -4,6 +4,7 @@ import { AboutComponent } from './client/about/about.component';
 import { IndexclientComponent } from './client/indexclient/indexclient.component';
 import { ProductListComponent } from './client/product-list/product-list.component';
 import { AddProductComponent } from './admin/add-product/add-product.component';
+
 import { IndexAdminComponent } from './admin/index-admin/index-admin.component';
 import { ProductEditComponent } from './admin/product-edit/product-edit.component';
 import { ProductManagerComponent } from './product-manager/product-manager.component';
@@ -27,7 +28,8 @@ const routes: Routes = [
   {path: 'admin', component: IndexAdminComponent,
   children:[
     { path: '', redirectTo: 'list', pathMatch: 'full'},
-    {path: 'add', component: AddComponent},
+    {path: 'add', component: AddProductComponent},
+    
     {path: 'edit', component: ProductEditComponent},
     {path: 'list', component: ProductManagerComponent},
     {path: 'list/edit/:productID', component: ProductEditComponent},

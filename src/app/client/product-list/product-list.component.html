@@ -1,21 +1,21 @@
 
 
 <!-- Portfolio Section -->
-<h2>Portfolio Heading</h2>
+
 
 <div class="row">
   <div class="col-lg-4 col-sm-6 portfolio-item" *ngFor="let product of products">
     <div class="card h-100">
-      <a href="#"><img class="card-img-top" [src]="product.img" alt=""></a>
+      <a  routerLink="/client/product/{{product.id}}"><img class="card-img-top" [src]="product.img" alt=""></a>
       <div class="card-body">
         <h4 class="card-title">
-          <a href="#">{{product.name}}</a>
+          <a  routerLink="/client/product/{{product.id}}">{{product.name}}</a>
         </h4>
         <h5>${{product.price}}</h5>
       </div>
       <div class="card-footer">
         <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-          <button class="btn btn-primary d-block w-100 btn-lg" routerLink="/product/{{product.id}}">Detail</button>
+          <!-- <button class="btn btn-primary d-block w-100 btn-lg" routerLink="/client/product/{{product.id}}">Detail</button> -->
 
       </div>
     </div>
