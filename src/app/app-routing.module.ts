@@ -10,21 +10,26 @@ import { ProductEditComponent } from './admin/product-edit/product-edit.componen
 import { ProductManagerComponent } from './product-manager/product-manager.component';
 import { ProductDetailComponent } from './client/product-detail/product-detail.component';
 import { ChartComponent } from './admin/chart/chart.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { BlogComponent } from './client/blog/blog.component';
+import { ContactComponent } from './client/contact/contact.component';
 
 
 const routes: Routes = [
   
-  {path: 'client', component: IndexclientComponent,
+  {path: 'motocyles', component: IndexclientComponent,
   children:[
     { path: '', redirectTo: 'about', pathMatch: 'full'},
     {path: 'about', component: AboutComponent},
     {path: 'product', component: ProductListComponent},
     {path: 'product/:productID', component: ProductDetailComponent},
-  
+    {path: 'blog', component: BlogComponent},
+    {path: 'contact', component: ContactComponent},
+
   ]
   },
   
-  { path: '', redirectTo: 'client', pathMatch: 'full'},
+  { path: '', redirectTo: 'motocyles', pathMatch: 'full'},
   {path: 'admin', component: IndexAdminComponent,
   children:[
     { path: '', redirectTo: 'list', pathMatch: 'full'},
@@ -34,11 +39,10 @@ const routes: Routes = [
     {path: 'list', component: ProductManagerComponent},
     {path: 'list/edit/:productID', component: ProductEditComponent},
     {path: 'charts', component: ChartComponent},
-
-   
-  ]
+]
 },
-
+  { path: '404', component: NotfoundComponent },
+  { path: '**', redirectTo: '/404' }
 ];
 
 @NgModule({

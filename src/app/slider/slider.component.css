@@ -1,15 +1,7 @@
-
-  .carousel-item {
-    padding-top: 65px;
-    height: 80vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-  
-  .portfolio-item {
-    margin-bottom: 30px;
-  }
+.insertSectionIntroTextWhite { 
+    font-family: 'Univers LT W01_57 Condensed'; 
+    font-size: 1.25em; 
+    line-height: 1.5em; 
+    color: #fff;
+     text-decoration: none;
+      margin: 0px 30px 20px 30px; text-align: center; }
