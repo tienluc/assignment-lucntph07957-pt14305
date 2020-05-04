@@ -35,10 +35,12 @@ export class AddProductComponent implements OnInit {
 }
 
   addProduct() {
-    console.log(this.form.value)
+    
     this.product=this.form.value;
     this.product.img=this.url;
     this.productService.addProduct(this.product).subscribe(Data => {
+            alert('Product has been added');
+
       this.router.navigateByUrl('/admin/list');
     })
     //console.log(this.product);

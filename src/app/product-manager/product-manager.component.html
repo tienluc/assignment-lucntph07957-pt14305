@@ -14,7 +14,8 @@
           
            
             <div class="card-body">
-              <input style="width: 300px;" class="form-control" placeholder="Search for..." type="text" [(ngModel)]="name" (input)="search()"/>
+                            <input style="width: 300px;" class="form-control" placeholder="Search for..." type="text" [(ngModel)]="name"/>
+
               <button style="float: right; margin-right: 10px;" class="btn btn-primary " routerLink="/admin/add">Add Product <i class="fas fa-plus"></i></button> 
               <br><br>
                 <div class="table-responsive">
@@ -30,7 +31,8 @@
                         </tr>
                       </thead>
                       <tbody>
-                        <tr *ngFor="let product of products | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                        <tr *ngFor="let product of products |filter : name| slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+
                           <!-- content here -->
                     
                           <th scope="row" ><p>{{product.id}}</p></th>

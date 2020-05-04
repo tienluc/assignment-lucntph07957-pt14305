@@ -67,6 +67,8 @@ export class ProductEditComponent implements OnInit {
     this.product.img=this.url;
     this.productService.updateProduct(this.product).subscribe(Data => {
       // console.log(Data);
+            alert('Product information has been updated');
+
       this.router.navigateByUrl('/admin/list');
     })
   }

@@ -28,19 +28,12 @@ export class ProductManagerComponent implements OnInit {
   removeItem(id){
     this.productService.removeProduct(id).subscribe(response =>{
       this.products= this.products.filter(products => products.id !==response.id);
+            alert('Product has been deleted');
+
     })
     // this.products= this.products.filter(products => products.id !==id);
   }
 
-  search(){
-    if(this.name !=""){
-      this.products=this.products.filter(res =>{
-        return res.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
-      });
-    }else if(this.name == ""){
-      this.ngOnInit();
-    }
-    
-  }
+  
 
 }

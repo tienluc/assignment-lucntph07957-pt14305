@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { HttpClientModule } from "@angular/common/http";
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 import { AppComponent } from "./app.component";
 
@@ -43,6 +44,7 @@ import { ContactComponent } from "./client/contact/contact.component";
   ],
   imports: [
     BrowserModule,
+    Ng2SearchPipeModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
